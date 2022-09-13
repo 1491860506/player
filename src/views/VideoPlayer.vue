@@ -21,15 +21,8 @@
     <n-space vertical v-if="!finish">
         <n-button @click="Form">播放</n-button>
         <n-space wrap>
-            <n-input size="large" type="text" v-model:value.trim="bilDanmaku" placeholder="弹幕 bvid / epid" />
-            <n-input-number size="large" v-model:value="bahaDm" :show-button="false" placeholder="baha 弹幕 sn" />
             <n-input size="large" type="text" v-model:value.trim="acplaySearchWord" placeholder="弹弹play 弹幕搜索" />
-            <n-input size="large" type="text" v-model:value.trim="bzimu" placeholder="字幕 bvid / epid" />
-            <n-input-number size="large" v-model:value="offset" :show-button="false" placeholder="偏移（单位 ms）" />
-            <n-input-number size="large" v-model:value="dmlimit" :show-button="false" placeholder="弹幕数量上限" />
         </n-space>
-        <n-input :autosize="{ maxRows: 5, minRows: 5 }" type="textarea" v-model:value="danmaku"
-            placeholder="dplayer 格式弹幕" />
         <n-input :autosize="{ maxRows: 5, minRows: 5 }" type="textarea" v-model:value="zm" placeholder="vtt 格式字幕" />
         <n-input :autosize="{ maxRows: 5, minRows: 5 }" type="textarea" v-model:value="asszm" placeholder="ass 格式字幕" />
     </n-space>
