@@ -11,7 +11,7 @@ import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
 (async () => {
     try {
         let n = await CorsServer()
-        setCors(`http://127.0.0.1:${n}/`)
+        setCors(`http://127.0.0.1:32335/`)
         let apip = await ApiServer()
         setApiAddr(`http://127.0.0.1:${apip}/`)
     } catch (e) {
