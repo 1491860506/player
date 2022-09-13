@@ -1,7 +1,7 @@
 import { dplayerDm, cors } from "@/utils/interface"
 
-const commentApiAddr = () => (cors + `https://api.dandanplay.net/api/v2/comment`)
-const searchApiAddr = () => (cors + `https://api.dandanplay.net/api/v2/search/episodes?`)
+const commentApiAddr = () => (`https://api.dandanplay.net/api/v2/comment`)
+const searchApiAddr = () => (`https://api.dandanplay.net/api/v2/search/episodes?`)
 
 export async function searchanime(key: string): Promise<SearchObject> {
     let u = new URLSearchParams()
